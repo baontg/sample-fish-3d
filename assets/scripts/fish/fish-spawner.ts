@@ -32,8 +32,9 @@ export class FishSpawner extends Component {
     }
 
     spawnFish() {
-        let randPrefab = this.fishPrefabs[this.random(0, this.fishPrefabs.length)];
-        let randPosition = new Vec3(this.random(this.leftLimit, this.rightLimit), this.random(this.botLimit, this.topLimit));
+        let randPrefab = this.fishPrefabs[Math.floor(Math.random() * this.fishPrefabs.length)];
+        let randPosition = new Vec3(this.random(this.leftLimit, this.rightLimit), 0, this.random(this.topLimit, this.botLimit));
+        let randRotation = new Vec3(0, this.random(0, 360), 0);
         let fish: Node = null;
         if (this.fishPool.size() > 0) {
             fish = this.fishPool.get();
@@ -42,6 +43,7 @@ export class FishSpawner extends Component {
         }
         fish.parent = this.fishContainer;
         fish.setPosition(randPosition);
+        fish.setRotationFromEuler(randRotation);
         fish.active = true;
         this.fishes.push(fish);
     }
@@ -56,18 +58,7 @@ export class FishSpawner extends Component {
     }
 
     random(min, max): number {
-        let num = Math.floor(Math.random() * (max - min) ) + min;
+        let num = Math.random() * (max - min) + min;
         return num;
     }
 }
-
-/**
- * [1] Class member could be defined like this.
- * [2] Use `property` decorator if your want the member to be serializable.
- * [3] Your initialization goes here.
- * [4] Your update function goes here.
- *
- * Learn more about scripting: https://docs.cocos.com/creator/3.0/manual/en/scripting/
- * Learn more about CCClass: https://docs.cocos.com/creator/3.0/manual/en/scripting/ccclass.html
- * Learn more about life-cycle callbacks: https://docs.cocos.com/creator/3.0/manual/en/scripting/life-cycle-callbacks.html
- */

@@ -2,12 +2,12 @@
   "ver": "1.1.27",
   "importer": "prefab",
   "imported": true,
-  "uuid": "72940249-2fc5-4ee0-b53d-860861786d33",
+  "uuid": "86a5afce-4ce8-401b-81c3-e3ea8dcb83dd",
   "files": [
     ".json"
   ],
   "subMetas": {},
   "userData": {
-    "syncNodeName": "AnglerFish"
+    "syncNodeName": "fish_1"
   }
 }

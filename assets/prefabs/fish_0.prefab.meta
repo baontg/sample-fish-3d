@@ -2,12 +2,12 @@
   "ver": "1.1.27",
   "importer": "prefab",
   "imported": true,
-  "uuid": "493eeb25-751f-43e6-a1c6-9e41fab44952",
+  "uuid": "405c4619-e0bd-4ebc-9235-5e82f30929e9",
   "files": [
     ".json"
   ],
   "subMetas": {},
   "userData": {
-    "syncNodeName": "BlueCarp"
+    "syncNodeName": "fish_0"
   }
 }
