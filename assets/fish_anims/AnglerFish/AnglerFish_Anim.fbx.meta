@@ -1,0 +1,111 @@
+{
+  "ver": "2.0.14",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "7a369227-6e6f-45d3-9edd-bf3ab1480547",
+  "files": [],
+  "subMetas": {
+    "ed08d": {
+      "importer": "gltf-animation",
+      "uuid": "7a369227-6e6f-45d3-9edd-bf3ab1480547@ed08d",
+      "displayName": "",
+      "id": "ed08d",
+      "name": "swim.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 2
+        },
+        "events": []
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "c52b3": {
+      "importer": "gltf-animation",
+      "uuid": "7a369227-6e6f-45d3-9edd-bf3ab1480547@c52b3",
+      "displayName": "",
+      "id": "c52b3",
+      "name": "death.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 2.3333333333333335,
+          "to": 3.125
+        },
+        "events": []
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "6e2c3": {
+      "importer": "gltf-scene",
+      "uuid": "7a369227-6e6f-45d3-9edd-bf3ab1480547@6e2c3",
+      "displayName": "",
+      "id": "6e2c3",
+      "name": "AnglerFish_Anim.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "legacyFbxImporter": false,
+    "animationImportSettings": [
+      {
+        "name": "Take 001",
+        "duration": 3.125,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "swim",
+            "from": 0,
+            "to": 2,
+            "wrapMode": 2
+          },
+          {
+            "name": "death",
+            "from": 2.3333333333333335,
+            "to": 3.125,
+            "wrapMode": 2
+          }
+        ]
+      }
+    ],
+    "redirect": "7a369227-6e6f-45d3-9edd-bf3ab1480547@6e2c3",
+    "assetFinder": {
+      "meshes": [],
+      "skeletons": [],
+      "textures": [],
+      "materials": [],
+      "scenes": [
+        "7a369227-6e6f-45d3-9edd-bf3ab1480547@6e2c3"
+      ]
+    },
+    "fbx": {
+      "unitConversion": "hierarchy-level"
+    }
+  }
+}

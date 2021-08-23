@@ -1,0 +1,84 @@
+{
+  "ver": "2.0.14",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "e8c3a760-26a2-4bb2-9013-cb36807d1d04",
+  "files": [],
+  "subMetas": {
+    "6de79": {
+      "importer": "gltf-mesh",
+      "uuid": "e8c3a760-26a2-4bb2-9013-cb36807d1d04@6de79",
+      "displayName": "",
+      "id": "6de79",
+      "name": "Blue_Carp_geo.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "438fe": {
+      "importer": "gltf-skeleton",
+      "uuid": "e8c3a760-26a2-4bb2-9013-cb36807d1d04@438fe",
+      "displayName": "",
+      "id": "438fe",
+      "name": "UnnamedSkeleton.skeleton",
+      "userData": {
+        "gltfIndex": 0,
+        "jointsLength": 21
+      },
+      "ver": "1.0.1",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "7d950": {
+      "importer": "gltf-scene",
+      "uuid": "e8c3a760-26a2-4bb2-9013-cb36807d1d04@7d950",
+      "displayName": "",
+      "id": "7d950",
+      "name": "BlueCarp.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "legacyFbxImporter": false,
+    "redirect": "e8c3a760-26a2-4bb2-9013-cb36807d1d04@7d950",
+    "assetFinder": {
+      "meshes": [
+        "e8c3a760-26a2-4bb2-9013-cb36807d1d04@6de79"
+      ],
+      "skeletons": [
+        "e8c3a760-26a2-4bb2-9013-cb36807d1d04@438fe"
+      ],
+      "textures": [],
+      "materials": [
+        "c984ca14-9270-4e19-9e89-db5975d21a92"
+      ],
+      "scenes": [
+        "e8c3a760-26a2-4bb2-9013-cb36807d1d04@7d950"
+      ]
+    },
+    "dumpMaterials": true,
+    "materialDumpDir": "db://assets/Data/Fish/BlueCarp/Materials_BlueCarp",
+    "fbx": {
+      "unitConversion": "hierarchy-level"
+    }
+  }
+}
