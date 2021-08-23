@@ -1,0 +1,81 @@
+{
+  "ver": "2.0.14",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "dd29caf1-4fc2-4aac-9526-6b82936906ca",
+  "files": [],
+  "subMetas": {
+    "ed08d": {
+      "importer": "gltf-animation",
+      "uuid": "dd29caf1-4fc2-4aac-9526-6b82936906ca@ed08d",
+      "displayName": "",
+      "id": "ed08d",
+      "name": "swim.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 1.2083333730697632
+        },
+        "events": []
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "ac19a": {
+      "importer": "gltf-scene",
+      "uuid": "dd29caf1-4fc2-4aac-9526-6b82936906ca@ac19a",
+      "displayName": "",
+      "id": "ac19a",
+      "name": "BlueCarp_Anim.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "legacyFbxImporter": false,
+    "animationImportSettings": [
+      {
+        "name": "Take 001",
+        "duration": 1.2083333730697632,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "swim",
+            "from": 0,
+            "to": 1.2083333730697632,
+            "wrapMode": 2
+          }
+        ]
+      }
+    ],
+    "redirect": "dd29caf1-4fc2-4aac-9526-6b82936906ca@ac19a",
+    "assetFinder": {
+      "meshes": [],
+      "skeletons": [],
+      "textures": [],
+      "materials": [],
+      "scenes": [
+        "dd29caf1-4fc2-4aac-9526-6b82936906ca@ac19a"
+      ]
+    },
+    "fbx": {
+      "unitConversion": "hierarchy-level"
+    }
+  }
+}

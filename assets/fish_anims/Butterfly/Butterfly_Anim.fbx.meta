@@ -1,0 +1,111 @@
+{
+  "ver": "2.0.14",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "43a6c62a-16cd-4d12-9ada-e07cf81145f4",
+  "files": [],
+  "subMetas": {
+    "e23ce": {
+      "importer": "gltf-animation",
+      "uuid": "43a6c62a-16cd-4d12-9ada-e07cf81145f4@e23ce",
+      "displayName": "",
+      "id": "e23ce",
+      "name": "Swim.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 1.6666666666666667
+        },
+        "events": []
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "ca7e4": {
+      "importer": "gltf-animation",
+      "uuid": "43a6c62a-16cd-4d12-9ada-e07cf81145f4@ca7e4",
+      "displayName": "",
+      "id": "ca7e4",
+      "name": "Death.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 2,
+          "to": 2.6666667461395264
+        },
+        "events": []
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "9e74c": {
+      "importer": "gltf-scene",
+      "uuid": "43a6c62a-16cd-4d12-9ada-e07cf81145f4@9e74c",
+      "displayName": "",
+      "id": "9e74c",
+      "name": "Butterfly_Anim.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "legacyFbxImporter": false,
+    "animationImportSettings": [
+      {
+        "name": "Take 001",
+        "duration": 2.6666667461395264,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "Swim",
+            "from": 0,
+            "to": 1.6666666666666667,
+            "wrapMode": 2
+          },
+          {
+            "name": "Death",
+            "from": 2,
+            "to": 2.6666667461395264,
+            "wrapMode": 2
+          }
+        ]
+      }
+    ],
+    "redirect": "43a6c62a-16cd-4d12-9ada-e07cf81145f4@9e74c",
+    "assetFinder": {
+      "meshes": [],
+      "skeletons": [],
+      "textures": [],
+      "materials": [],
+      "scenes": [
+        "43a6c62a-16cd-4d12-9ada-e07cf81145f4@9e74c"
+      ]
+    },
+    "fbx": {
+      "unitConversion": "hierarchy-level"
+    }
+  }
+}

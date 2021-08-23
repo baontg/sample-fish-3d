@@ -1,0 +1,84 @@
+{
+  "ver": "2.0.14",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "e22d4cfb-0ff8-4612-acee-a01c6c0d1d52",
+  "files": [],
+  "subMetas": {
+    "cfbb3": {
+      "importer": "gltf-mesh",
+      "uuid": "e22d4cfb-0ff8-4612-acee-a01c6c0d1d52@cfbb3",
+      "displayName": "",
+      "id": "cfbb3",
+      "name": "Butterfly_geo.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "438fe": {
+      "importer": "gltf-skeleton",
+      "uuid": "e22d4cfb-0ff8-4612-acee-a01c6c0d1d52@438fe",
+      "displayName": "",
+      "id": "438fe",
+      "name": "UnnamedSkeleton.skeleton",
+      "userData": {
+        "gltfIndex": 0,
+        "jointsLength": 24
+      },
+      "ver": "1.0.1",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "a8dda": {
+      "importer": "gltf-scene",
+      "uuid": "e22d4cfb-0ff8-4612-acee-a01c6c0d1d52@a8dda",
+      "displayName": "",
+      "id": "a8dda",
+      "name": "Butterfly.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "legacyFbxImporter": false,
+    "redirect": "e22d4cfb-0ff8-4612-acee-a01c6c0d1d52@a8dda",
+    "assetFinder": {
+      "meshes": [
+        "e22d4cfb-0ff8-4612-acee-a01c6c0d1d52@cfbb3"
+      ],
+      "skeletons": [
+        "e22d4cfb-0ff8-4612-acee-a01c6c0d1d52@438fe"
+      ],
+      "textures": [],
+      "materials": [
+        "af276c00-397a-4763-a501-084cde59ab05"
+      ],
+      "scenes": [
+        "e22d4cfb-0ff8-4612-acee-a01c6c0d1d52@a8dda"
+      ]
+    },
+    "dumpMaterials": true,
+    "materialDumpDir": "db://assets/Data/Fish/Butterfly/Materials_Butterfly",
+    "fbx": {
+      "unitConversion": "hierarchy-level"
+    }
+  }
+}

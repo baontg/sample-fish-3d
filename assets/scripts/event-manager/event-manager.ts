@@ -2,8 +2,6 @@ class EventManager {
     private static listeners: Map<any, Function[]> = new Map<any, Function[]>();
 
     public static publish(event: any, data?: any) {
-        console.log(`Publishing event`, event, `with data =`, data);
-        
         if (!this.listeners.has(event)) {
             return;
         }

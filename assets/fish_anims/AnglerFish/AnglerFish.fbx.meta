@@ -1,0 +1,84 @@
+{
+  "ver": "2.0.14",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "9151597d-a1ca-40b5-b3a9-06dba8ccd14b",
+  "files": [],
+  "subMetas": {
+    "5888f": {
+      "importer": "gltf-mesh",
+      "uuid": "9151597d-a1ca-40b5-b3a9-06dba8ccd14b@5888f",
+      "displayName": "",
+      "id": "5888f",
+      "name": "AnglerFish_geo.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "438fe": {
+      "importer": "gltf-skeleton",
+      "uuid": "9151597d-a1ca-40b5-b3a9-06dba8ccd14b@438fe",
+      "displayName": "",
+      "id": "438fe",
+      "name": "UnnamedSkeleton.skeleton",
+      "userData": {
+        "gltfIndex": 0,
+        "jointsLength": 23
+      },
+      "ver": "1.0.1",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "2e5df": {
+      "importer": "gltf-scene",
+      "uuid": "9151597d-a1ca-40b5-b3a9-06dba8ccd14b@2e5df",
+      "displayName": "",
+      "id": "2e5df",
+      "name": "AnglerFish.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "legacyFbxImporter": false,
+    "redirect": "9151597d-a1ca-40b5-b3a9-06dba8ccd14b@2e5df",
+    "assetFinder": {
+      "meshes": [
+        "9151597d-a1ca-40b5-b3a9-06dba8ccd14b@5888f"
+      ],
+      "skeletons": [
+        "9151597d-a1ca-40b5-b3a9-06dba8ccd14b@438fe"
+      ],
+      "textures": [],
+      "materials": [
+        "03d387f7-c271-43bc-b20d-9bf796e3e8ba"
+      ],
+      "scenes": [
+        "9151597d-a1ca-40b5-b3a9-06dba8ccd14b@2e5df"
+      ]
+    },
+    "dumpMaterials": true,
+    "materialDumpDir": "db://assets/Data/Fish/AnglerFish/Materials_AnglerFish",
+    "fbx": {
+      "unitConversion": "hierarchy-level"
+    }
+  }
+}

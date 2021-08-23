@@ -1,0 +1,123 @@
+{
+  "ver": "2.0.14",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "56bc11ed-5770-4b18-ac74-43537810ecbf",
+  "files": [],
+  "subMetas": {
+    "825ed": {
+      "importer": "gltf-mesh",
+      "uuid": "56bc11ed-5770-4b18-ac74-43537810ecbf@825ed",
+      "displayName": "",
+      "id": "825ed",
+      "name": "Sphere.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "933e8": {
+      "importer": "gltf-embeded-image",
+      "uuid": "56bc11ed-5770-4b18-ac74-43537810ecbf@933e8",
+      "displayName": "",
+      "id": "933e8",
+      "name": "Texture.image",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".png",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "eb3be": {
+      "importer": "texture",
+      "uuid": "56bc11ed-5770-4b18-ac74-43537810ecbf@eb3be",
+      "displayName": "",
+      "id": "eb3be",
+      "name": "Texture.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "56bc11ed-5770-4b18-ac74-43537810ecbf@933e8"
+      },
+      "ver": "1.0.21",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "24fa8": {
+      "importer": "gltf-material",
+      "uuid": "56bc11ed-5770-4b18-ac74-43537810ecbf@24fa8",
+      "displayName": "",
+      "id": "24fa8",
+      "name": "FISHV1.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "84edf": {
+      "importer": "gltf-scene",
+      "uuid": "56bc11ed-5770-4b18-ac74-43537810ecbf@84edf",
+      "displayName": "",
+      "id": "84edf",
+      "name": "fishred.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "Texture",
+        "uri": "56bc11ed-5770-4b18-ac74-43537810ecbf@933e8"
+      }
+    ],
+    "legacyFbxImporter": false,
+    "redirect": "56bc11ed-5770-4b18-ac74-43537810ecbf@84edf",
+    "assetFinder": {
+      "meshes": [
+        "56bc11ed-5770-4b18-ac74-43537810ecbf@825ed"
+      ],
+      "skeletons": [],
+      "textures": [
+        "56bc11ed-5770-4b18-ac74-43537810ecbf@eb3be"
+      ],
+      "materials": [
+        "56bc11ed-5770-4b18-ac74-43537810ecbf@24fa8"
+      ],
+      "scenes": [
+        "56bc11ed-5770-4b18-ac74-43537810ecbf@84edf"
+      ]
+    }
+  }
+}
