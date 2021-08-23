@@ -22,6 +22,9 @@
       },
       {
         "__id__": 47
+      },
+      {
+        "__id__": 51
       }
     ],
     "_active": true,
@@ -29,7 +32,7 @@
     "_prefab": null,
     "autoReleaseAssets": false,
     "_globals": {
-      "__id__": 58
+      "__id__": 53
     },
     "_id": "039690d8-e3e7-4fb7-a4ed-8200b10718e1"
   },
@@ -1089,15 +1092,15 @@
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": 0,
-      "y": 61.839,
-      "z": -24.634
+      "y": 10,
+      "z": 45
     },
     "_lrot": {
       "__type__": "cc.Quat",
-      "x": -0.16582218177624428,
+      "x": -0.08715574274765817,
       "y": 0,
       "z": 0,
-      "w": 0.9861556692687855
+      "w": 0.9961946980917455
     },
     "_lscale": {
       "__type__": "cc.Vec3",
@@ -1108,7 +1111,7 @@
     "_layer": 1073741824,
     "_euler": {
       "__type__": "cc.Vec3",
-      "x": -19.09,
+      "x": -10,
       "y": 0,
       "z": 0
     },
@@ -1130,7 +1133,7 @@
     "_fov": 45,
     "_fovAxis": 0,
     "_orthoHeight": 10,
-    "_near": 1,
+    "_near": 0.01,
     "_far": 1000,
     "_color": {
       "__type__": "cc.Color",
@@ -1163,163 +1166,164 @@
   },
   {
     "__type__": "cc.Node",
+    "_name": "Directional Light",
     "_objFlags": 0,
     "_parent": {
       "__id__": 1
     },
-    "_prefab": {
-      "__id__": 48
-    },
-    "_id": "82dtwrMHJPmJruuYFhJyAN"
-  },
-  {
-    "__type__": "cc.PrefabInfo",
-    "root": {
-      "__id__": 47
-    },
-    "asset": {
-      "__uuid__": "9151597d-a1ca-40b5-b3a9-06dba8ccd14b@2e5df",
-      "__expectedType__": "cc.Prefab"
-    },
-    "fileId": "f2/m/otjVTILJUD7gSbAfW",
-    "instance": {
-      "__id__": 49
-    }
-  },
-  {
-    "__type__": "cc.PrefabInstance",
-    "fileId": "42/c+ryLdJUIcV1AmHmqlu",
-    "mountedChildren": [],
-    "mountedComponents": [],
-    "propertyOverrides": [
+    "_children": [],
+    "_active": true,
+    "_components": [
       {
-        "__id__": 50
-      },
-      {
-        "__id__": 52
-      },
-      {
-        "__id__": 53
-      },
-      {
-        "__id__": 54
-      },
-      {
-        "__id__": 56
-      },
-      {
-        "__id__": 57
+        "__id__": 48
       }
     ],
-    "removedComponents": []
-  },
-  {
-    "__type__": "CCPropertyOverrideInfo",
-    "targetInfo": {
-      "__id__": 51
+    "_prefab": null,
+    "_lpos": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 6.035,
+      "z": 11.691
     },
-    "propertyPath": [
-      "_name"
-    ],
-    "value": "AnglerFish"
-  },
-  {
-    "__type__": "cc.TargetInfo",
-    "localID": [
-      "f2/m/otjVTILJUD7gSbAfW"
-    ]
-  },
-  {
-    "__type__": "CCPropertyOverrideInfo",
-    "targetInfo": {
-      "__id__": 51
+    "_lrot": {
+      "__type__": "cc.Quat",
+      "x": -0.38190124547809795,
+      "y": 0,
+      "z": 0,
+      "w": 0.9242031371415472
     },
-    "propertyPath": [
-      "_lpos"
+    "_lscale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_layer": 1073741824,
+    "_euler": {
+      "__type__": "cc.Vec3",
+      "x": -44.903,
+      "y": 0,
+      "z": 0
+    },
+    "_id": "43vwwbc0hPb7WRNcO2+YY9"
+  },
+  {
+    "__type__": "cc.DirectionalLight",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 47
+    },
+    "_enabled": true,
+    "__prefab": {
+      "__id__": 49
+    },
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_useColorTemperature": false,
+    "_colorTemperature": 6550,
+    "_staticSettings": {
+      "__id__": 50
+    },
+    "_illuminance": 65000,
+    "_id": "c1ktsE3y5OPa4JYZX7nzvi"
+  },
+  {
+    "__type__": "cc.CompPrefabInfo",
+    "fileId": "1fmNgOipdOha90C8NNkXEN"
+  },
+  {
+    "__type__": "cc.StaticLightSettings",
+    "_baked": false,
+    "_editorOnly": false,
+    "_bakeable": false,
+    "_castShadow": false
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "FishSpawner",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 1
+    },
+    "_children": [],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 52
+      }
     ],
-    "value": {
+    "_prefab": null,
+    "_lpos": {
       "__type__": "cc.Vec3",
       "x": 0,
       "y": 0,
       "z": 0
-    }
-  },
-  {
-    "__type__": "CCPropertyOverrideInfo",
-    "targetInfo": {
-      "__id__": 51
     },
-    "propertyPath": [
-      "_lrot"
-    ],
-    "value": {
+    "_lrot": {
       "__type__": "cc.Quat",
       "x": 0,
       "y": 0,
       "z": 0,
       "w": 1
-    }
-  },
-  {
-    "__type__": "CCPropertyOverrideInfo",
-    "targetInfo": {
-      "__id__": 55
     },
-    "propertyPath": [
-      "_materials",
-      "0"
-    ],
-    "value": {
-      "__uuid__": "89bd9420-a0e3-41c2-8e6a-0def7d546185",
-      "__expectedType__": "cc.Material"
-    }
-  },
-  {
-    "__type__": "cc.TargetInfo",
-    "localID": [
-      "3bsiOwsoJexpaq2e6si6A5"
-    ]
-  },
-  {
-    "__type__": "CCPropertyOverrideInfo",
-    "targetInfo": {
-      "__id__": 55
+    "_lscale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
     },
-    "propertyPath": [
-      "_skinningRoot"
-    ],
-    "value": {
-      "__id__": 47
-    }
+    "_layer": 1073741824,
+    "_euler": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_id": "dcr3Eg1hdHQII1nKccjPsQ"
   },
   {
-    "__type__": "CCPropertyOverrideInfo",
-    "targetInfo": {
+    "__type__": "5d0c0wJYeBH9YoZiTXkneYq",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
       "__id__": 51
     },
-    "propertyPath": [
-      "_lscale"
+    "_enabled": true,
+    "__prefab": null,
+    "leftLimit": -25,
+    "rightLimit": 25,
+    "topLimit": 15,
+    "botLimit": -10,
+    "fishContainer": {
+      "__id__": 51
+    },
+    "fishPrefabs": [
+      {
+        "__uuid__": "4007ad6c-d1e3-4ce8-8c0c-5c160c4583b4",
+        "__expectedType__": "cc.Prefab"
+      }
     ],
-    "value": {
-      "__type__": "cc.Vec3",
-      "x": 1000,
-      "y": 1000,
-      "z": 1000
-    }
+    "_id": "b0WegHkcJMwKuju/JDAKxU"
   },
   {
     "__type__": "cc.SceneGlobals",
     "ambient": {
-      "__id__": 59
+      "__id__": 54
     },
     "shadows": {
-      "__id__": 60
+      "__id__": 55
     },
     "_skybox": {
-      "__id__": 61
+      "__id__": 56
     },
     "fog": {
-      "__id__": 62
+      "__id__": 57
     }
   },
   {
