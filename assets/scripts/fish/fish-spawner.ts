@@ -32,7 +32,7 @@ export class FishSpawner extends Component {
     }
 
     spawnFish() {
-        let randPrefab = this.fishPrefabs[this.random(0, this.fishPrefabs.length)];
+        let randPrefab = this.fishPrefabs[Math.floor(Math.random() * this.fishPrefabs.length)];
         let randPosition = new Vec3(this.random(this.leftLimit, this.rightLimit), this.random(this.botLimit, this.topLimit));
         let fish: Node = null;
         if (this.fishPool.size() > 0) {
@@ -56,7 +56,7 @@ export class FishSpawner extends Component {
     }
 
     random(min, max): number {
-        let num = Math.floor(Math.random() * (max - min) ) + min;
+        let num = Math.random() * (max - min) + min;
         return num;
     }
 }
