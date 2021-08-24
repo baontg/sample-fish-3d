@@ -10,15 +10,15 @@ export class Fish extends Component {
     @property({ type: AnimationClip })
     private clipSwim: AnimationClip;
 
-    @property(Node )
+    @property({ type: Node })
     private nodeModel: Node;
 
-    @property(Vec3)
-    private swimAnchor = cc.v3();
+    @property
+    private swimAnchor = new Vec3();
 
     swim() {
         this.animation.play(this.clipSwim.name);
-        this.nodeModel.setPosition(this.swimAnchor as any);
+        this.nodeModel.setPosition(this.swimAnchor);
     }
 
     onEnable() {
