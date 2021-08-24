@@ -1,5 +1,5 @@
 
-import { _decorator, Component, view, Layout, UITransform, Size } from 'cc';
+import { _decorator, Component, view, Layout, UITransform, Size, Widget } from 'cc';
 const { ccclass } = _decorator;
 
 @ccclass('LayoutButtons')
@@ -16,6 +16,8 @@ export class LayoutButtons extends Component {
         } else {
             this.setVerticalLayout();
         }
+        let widget = this.node.getComponent(Widget);
+        widget.updateAlignment();
     }
 
     setHorizontalLayout() {
