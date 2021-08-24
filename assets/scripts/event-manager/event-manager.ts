@@ -9,7 +9,7 @@ class EventManager {
         actions.forEach(action => action(data));
     }
 
-    public static subscribe(event: any, actionHandler: Function) {
+    public static subscribe(event: any, actionHandler: Function) { // target, function (bind same target + same object => n binding objects)
         let actions = this.listeners.get(event) || [];
         actions.push(actionHandler);
         this.listeners.set(event, actions);

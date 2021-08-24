@@ -15,10 +15,10 @@ export class FishSpawner extends Component {
     @property
     private botLimit = 0;
 
-    @property({type: Node})
-    private fishContainer;
+    @property(Node)
+    private fishContainer = null;
 
-    @property({type: Prefab})
+    @property(Prefab)
     private fishPrefabs = [];
 
     private fishPool: NodePool;
@@ -27,8 +27,8 @@ export class FishSpawner extends Component {
     start() {
         this.fishPool = new NodePool();
 
-        EventManager.subscribe(UIEnum.ButtonCreateFishClicked, this.spawnFish.bind(this));
-        EventManager.subscribe(UIEnum.ButtonRemoveAllClicked, this.removeAllFish.bind(this));
+        //EventManager.subscribe(UIEnum.ButtonCreateFishClicked, this.spawnFish.bind(this));
+        //EventManager.subscribe(UIEnum.ButtonRemoveAllClicked, this.removeAllFish.bind(this));
     }
 
     spawnFish() {
@@ -45,6 +45,9 @@ export class FishSpawner extends Component {
         fish.setPosition(randPosition);
         fish.setRotationFromEuler(randRotation);
         fish.active = true;
+        // clear mem + logic cho fish 
+        
+        // --------------------------
         this.fishes.push(fish);
     }
 
