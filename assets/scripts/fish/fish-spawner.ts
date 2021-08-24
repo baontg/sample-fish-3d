@@ -1,5 +1,7 @@
 
 import { _decorator, Component, Node, NodePool, Prefab, instantiate, Vec3 } from 'cc';
+import Random from '../utils/random';
+import { Fish } from './fish';
 const { ccclass, property } = _decorator;
 
 @ccclass('FishSpawner')
@@ -19,41 +21,21 @@ export class FishSpawner extends Component {
     @property(Prefab)
     private fishPrefabs = [];
 
-    private fishPool: NodePool;
     private fishes: Node[] = [];
-
-    start() {
-        this.fishPool = new NodePool();
-    }
 
     spawnFish() {
         let randPrefab = this.fishPrefabs[Math.floor(Math.random() * this.fishPrefabs.length)];
-        let randPosition = new Vec3(this.random(this.leftLimit, this.rightLimit), 0, this.random(this.topLimit, this.botLimit));
-        let randRotation = new Vec3(0, this.random(0, 360), 0);
-        let fish: Node = null;
-        if (this.fishPool.size() > 0) {
-            fish = this.fishPool.get();
-        } else {
-            fish = instantiate(randPrefab);
-        }
+        let randPosition = new Vec3(Random.range(this.leftLimit, this.rightLimit), 0, Random.range(this.topLimit, this.botLimit));
+        let fish = instantiate(randPrefab);
         fish.parent = this.fishContainer;
         fish.setPosition(randPosition);
-        fish.setRotationFromEuler(randRotation);
         fish.active = true;
-        this.fishes.push(fish);
+        let fishComp = fish.getComponent(Fish);
+        fishComp.setMovingRange(this.leftLimit, this.rightLimit, this.topLimit, this.botLimit);
+        fishComp.swim();
     }
 
     removeAllFish() {
-        let fish = this.fishes.pop();
-        while (fish != null) {
-            fish.active = false;
-            this.fishPool.put(fish);
-            fish = this.fishes.pop();
-        }
-    }
-
-    random(min: number, max: number): number {
-        let num = Math.random() * (max - min) + min;
-        return num;
+        this.fishContainer.destroyAllChildren();
     }
 }
