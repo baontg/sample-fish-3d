@@ -1,7 +1,5 @@
 
 import { _decorator, Component, Node, NodePool, Prefab, instantiate, Vec3 } from 'cc';
-import UIEnum from '../enum/ui-enum';
-import EventManager from '../event-manager/event-manager';
 const { ccclass, property } = _decorator;
 
 @ccclass('FishSpawner')
@@ -26,9 +24,6 @@ export class FishSpawner extends Component {
 
     start() {
         this.fishPool = new NodePool();
-
-        //EventManager.subscribe(UIEnum.ButtonCreateFishClicked, this.spawnFish.bind(this));
-        //EventManager.subscribe(UIEnum.ButtonRemoveAllClicked, this.removeAllFish.bind(this));
     }
 
     spawnFish() {
@@ -45,9 +40,6 @@ export class FishSpawner extends Component {
         fish.setPosition(randPosition);
         fish.setRotationFromEuler(randRotation);
         fish.active = true;
-        // clear mem + logic cho fish 
-        
-        // --------------------------
         this.fishes.push(fish);
     }
 
@@ -60,7 +52,7 @@ export class FishSpawner extends Component {
         }
     }
 
-    random(min, max): number {
+    random(min: number, max: number): number {
         let num = Math.random() * (max - min) + min;
         return num;
     }

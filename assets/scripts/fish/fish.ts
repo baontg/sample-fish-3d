@@ -4,24 +4,37 @@ const { ccclass, property } = _decorator;
 
 @ccclass('Fish')
 export class Fish extends Component {
-    @property({ type: SkeletalAnimationComponent })
-    private animation: SkeletalAnimationComponent;
+    @property(SkeletalAnimationComponent)
+    private animation: SkeletalAnimationComponent = null;
 
-    @property({ type: AnimationClip })
-    private clipSwim: AnimationClip;
+    @property(AnimationClip)
+    private clipSwim: AnimationClip = null;
 
-    @property({ type: Node })
-    private nodeModel: Node;
+    @property(Node)
+    private nodeModel: Node = null;
 
     @property
     private swimAnchor = new Vec3();
 
+    private defaultPosition = new Vec3();
+
+    onEnable() {
+        this.swim();
+    }
+
+    onDisable(){
+        this.idle();
+    }
+
     swim() {
+        this.defaultPosition = this.nodeModel.getPosition();
         this.animation.play(this.clipSwim.name);
         this.nodeModel.setPosition(this.swimAnchor);
     }
 
-    onEnable() {
-        this.swim();
+    idle(){
+        this.animation.stop();
+        this.nodeModel.setPosition(this.defaultPosition);
+        this.defaultPosition = null;
     }
 }
