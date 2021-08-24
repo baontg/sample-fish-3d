@@ -13,8 +13,8 @@ export class Fish extends Component {
     @property({ type: Node })
     private nodeModel: Node;
 
-    @property({ type: Vec3 })
-    private swimAnchor: Vec3;
+    @property
+    private swimAnchor = new Vec3();
 
     swim() {
         this.animation.play(this.clipSwim.name);
