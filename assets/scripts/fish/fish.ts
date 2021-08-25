@@ -26,10 +26,6 @@ export class Fish extends Component {
     private isSwimming = false;
     private posTarget = new Vec3();
 
-    onDisable() {
-        this.idle();
-    }
-
     update(dt: number) {
         if (this.isSwimming) {
             let pos = this.node.getPosition();
@@ -63,9 +59,10 @@ export class Fish extends Component {
 
     idle() {
         this.isSwimming = false;
-        this.animation.stop();
-        this.nodeModel.setPosition(this.defaultPosition);
-        this.defaultPosition = null;
+    }
+
+    switchState() {
+        this.isSwimming = !this.isSwimming;
     }
 
     moveNext() {
